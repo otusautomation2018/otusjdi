@@ -26,4 +26,11 @@ public class HomePage extends WebPage {
         this.destinationCity.select(FlightData.destinationCity());
         this.submitFormBtn.click();
     }
+
+    @Step
+    public void selectCitiesAndSubmitFormWithCities(String departureCity, String destinationCity){
+        this.departureCity.select(departureCity);
+        this.destinationCity.select(destinationCity);
+        this.submitFormBtn.click();
+    }
 }
